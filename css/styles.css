@@ -1,7 +1,15 @@
+:root {
+    --primary-color: #849acc;
+    --primary-dark: #7e8eb0;
+    --background-color: #fffff;
+    --text-color: #6e6863    ;
+    --footer-text-color: #aaa;
+}
+
 body {
     font-family: 'Comic Sans MS', cursive, sans-serif;
-    background-color: #f0f8ff;
-    color: #333;
+    background-color: var(--background-color);
+    color: var(--text-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,32 +17,39 @@ body {
     margin: 0;
     flex-direction: column;
 }
+
 h1 {
-    color: #ff69b4;
+    font-family: 'Helvetica', cursive, sans-serif;
+    color: var(--primary-color);
     font-size: 2.5rem;
     margin-bottom: 20px;
+    text-align: center;
 }
+
 p {
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
+
 input[type="text"] {
     padding: 10px;
     font-size: 1rem;
     border-radius: 10px;
-    border: 2px solid #ff69b4;
+    border: 2px solid var(--primary-color);
     width: 300px;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
+
 input[type="text"]:focus {
-    border-color: #ff1493;
+    border-color: var(--primary-dark);
     outline: none;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
 button {
-    background-color: #ff69b4;
+    background-color: var(--primary-color);
     color: white;
     padding: 10px 20px;
     font-size: 1rem;
@@ -43,21 +58,51 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
 button:hover {
-    background-color: #ff1493;
+    background-color: var(--primary-dark);
     transform: scale(1.05);
 }
+
 button:active {
     transform: scale(0.95);
 }
+
 a {
-    color: #ff1493;
+    text-decoration: underline;
+    color: inherit;
+    transition: filter 0.3s ease;
+}
+
+a:hover {
+   /* filter: brightness(1.2); /* Makes the color 20% lighter */ 
+   color: var(--primary-dark)
+}
+
+.koala-link {
+    color: var(--primary-dark);
     font-weight: bold;
     text-decoration: none;
     font-size: 1.2rem;
     transition: color 0.3s ease;
 }
-a:hover {
-    color: #ff69b4;
+
+.koala-link:hover {
+    color: var(--primary-color);
 }
 
+footer {
+    text-align: center;  /* Center the text */
+    position: fixed;  /* Fix the footer at the bottom */
+    bottom: 0;  /* Stick to the bottom */
+    width: 100%;  /* Full width */
+    padding: 10px 0;  /* Small padding */
+    font-size: 12px;  /* Small font size */
+    color: var(--footer-text-color);  /* Light grey text */
+}
+
+footer a {
+    color: var(--footer-text-color);  /* Light grey links */
+    text-decoration: none;  /* Remove underline */
+    margin: 0 5px;  /* Small margin between links */
+}
