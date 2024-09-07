@@ -14,3 +14,5 @@ function convertUrl() {
     outputLink.href = finalUrl;
 }
 
+// Add event listener for live updates
+document.getElementById('inputUrl').addEventListener('input', convertUrl);
