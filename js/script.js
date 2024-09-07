@@ -1,6 +1,12 @@
 function convertUrl() {
     // Get the input URL
-    const inputUrl = document.getElementById('inputUrl').value;
+    let inputUrl = document.getElementById('inputUrl').value.trim();
+
+    // Check if the URL starts with "http://" or "https://"
+    if (!inputUrl.startsWith('http://') && !inputUrl.startsWith('https://')) {
+        // Prepend "http://" if neither is present
+        inputUrl = 'http://' + inputUrl;
+    }
 
     // Encode the URL to Base64
     const encodedUrl = btoa(inputUrl);
