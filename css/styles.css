@@ -75,17 +75,17 @@ a:hover {
 }
 
 footer {
-    text-align: center;  /* Center the text */
-    position: fixed;  /* Fix the footer at the bottom */
-    bottom: 0;  /* Stick to the bottom */
-    width: 100%;  /* Full width */
-    padding: 10px 0;  /* Small padding */
-    font-size: 12px;  /* Small font size */
-    color: var(--footer-text-color);  /* Light grey text */
+    text-align: center;  
+    position: fixed;  
+    bottom: 0;  
+    width: 100%;  
+    padding: 10px 0;  
+    font-size: 12px; 
+    color: var(--footer-text-color);  
 }
 
 footer a {
-    color: var(--footer-text-color);  /* Light grey links */
-    text-decoration: none;  /* Remove underline */
-    margin: 0 5px;  /* Small margin between links */
+    color: var(--footer-text-color);  
+    text-decoration: none; 
+    margin: 0 5px;  
 }
