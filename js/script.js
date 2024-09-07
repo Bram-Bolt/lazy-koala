@@ -9,7 +9,7 @@ function convertUrl() {
     }
 
     // Encode the URL to Base64
-    const encodedUrl = btoa(inputUrl);
+    const encodedUrl = window.btoa(inputUrl);
 
     // Create the final URL
     const finalUrl = 'https://www.koalastothemax.com/?' + encodedUrl;
@@ -20,5 +20,5 @@ function convertUrl() {
     outputLink.href = finalUrl;
 }
 
-// Add event listener for live updates
+// Add event listener for dynamic updating
 document.getElementById('inputUrl').addEventListener('input', convertUrl);
