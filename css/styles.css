@@ -72,6 +72,7 @@ a:hover {
 
 .koala-link:hover {
     color: var(--primary-color);
+    text-decoration: underline;
 }
 
 footer {
