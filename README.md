@@ -50,8 +50,12 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+A simple website that turns image links into playable koalastothemax games, all without having to complete the previous game first, which is the standard on koalastothemax.com. This lack of unnecessary effort is where Lazy-Koala got its name from.
 
 ## How does the generator work?
+When koalastothemax.com creates a game from a custom image, it uses a system called "[Base64 encoding](https://en.wikipedia.org/wiki/Base64)" to convert your image link into a sequence of letters and numbers. This Base64 encoding is used as the URL path.
+
+This generator does this process automatically and connects it to a usable interface.
 
 ## How to get an image URL.
  
