@@ -31,18 +31,16 @@
 </div>
 
 
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#About The Project">About The Project</a></li>
-    <li><a href="#How does the generator work?">Contributing</a></li>
-    <li><a href="#How to get an image URL.">How to get an image URL.</a></li>
-    <li><a href="#Roadmap">Contributing</a></li>
+    <li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#how-does-the-generator-work">How Does the Generator Work?</a></li>
+    <li><a href="#how-to-get-an-image-url">How to Get an Image URL</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
-
   </ol>
 </details>
 
@@ -50,7 +48,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-A simple website that turns image links into playable koalastothemax games, all without having to complete the previous game first, which is the standard on koalastothemax.com. This lack of unnecessary effort is where Lazy-Koala got its name from.
+A simple html-css-js website that turns image links into playable koalastothemax games, all without having to complete the previous game first, which is the standard on koalastothemax.com. This lack of unnecessary effort is where Lazy-Koala got its name from.
 
 ## How does the generator work?
 When koalastothemax.com creates a game from a custom image, it uses a system called "[Base64 encoding](https://en.wikipedia.org/wiki/Base64)" to convert your image link into a sequence of letters and numbers. This Base64 encoding is used as the URL path.
