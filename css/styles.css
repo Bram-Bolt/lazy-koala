@@ -48,11 +48,6 @@ input[type="text"]:focus {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-
-button:active {
-    transform: scale(0.95);
-}
-
 a {
     text-decoration: underline;
     color: inherit;
